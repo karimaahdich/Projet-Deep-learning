@@ -1,0 +1,425 @@
+{"timestamp": "2025-12-13T19:00:13.174942Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:00:13.176508Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:00:13.178232Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:00:13.180839Z", "stage": "generation_success", "level": "easy", "command": "nmap --open -sS 192.168.1.10", "source_agent": "RAG", "rationale": "Rules-based generation"}
+{"timestamp": "2025-12-13T19:00:13.191920Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.85, "issues": [], "command": "nmap --open -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:00:13.193826Z", "stage": "pipeline_success", "final_command": "nmap --open -sS 192.168.1.10", "final_confidence": 0.85, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-13T19:00:24.485101Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan rapide avec détection de services sur 192.168.1.10"}
+{"timestamp": "2025-12-13T19:00:24.486207Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan rapide avec détection de services sur 192.168.1.10"}
+{"timestamp": "2025-12-13T19:00:24.487175Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:00:24.489138Z", "stage": "generation_success", "level": "easy", "command": "nmap -sV 192.168.1.10", "source_agent": "RAG", "rationale": "Rules-based generation"}
+{"timestamp": "2025-12-13T19:00:24.491270Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-13T19:00:24.492399Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-13T19:00:24.493131Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:00:24.494759Z", "stage": "generation_success", "level": "medium", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-13T19:00:24.496598Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-13T19:00:24.497716Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-13T19:00:24.498622Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:00:24.500581Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion stub - aggressive full scan on many ports"}
+{"timestamp": "2025-12-13T19:00:24.503189Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24"}
+{"timestamp": "2025-12-13T19:00:24.504122Z", "stage": "pipeline_success", "final_command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-13T19:01:19.602432Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:01:19.603741Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:01:19.604691Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:01:19.606943Z", "stage": "generation_success", "level": "easy", "command": "nmap --open -sS 192.168.1.10", "source_agent": "RAG", "rationale": "Rules-based generation"}
+{"timestamp": "2025-12-13T19:01:19.608851Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.85, "issues": [], "command": "nmap --open -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:01:19.609796Z", "stage": "pipeline_success", "final_command": "nmap --open -sS 192.168.1.10", "final_confidence": 0.85, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-13T19:19:26.288969Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:19:26.289544Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:19:26.297870Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:19:26.298899Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:19:26.299338Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.9, "issues": [], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:19:26.299766Z", "stage": "pipeline_success", "final_command": "nmap -sS 192.168.1.10", "final_confidence": 0.9, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-13T19:19:26.306102Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:19:26.306739Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:19:26.307117Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:19:26.307547Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:19:26.307970Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["force fail"], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:19:26.308360Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["force fail"]}
+{"timestamp": "2025-12-13T19:19:26.309092Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:19:26.309810Z", "stage": "generation_success", "level": "medium", "command": "nmap -sS -sV 192.168.1.10", "source_agent": "LLM", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:19:26.311523Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["force fail"], "command": "nmap -sS -sV 192.168.1.10"}
+{"timestamp": "2025-12-13T19:19:26.312032Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["force fail"]}
+{"timestamp": "2025-12-13T19:19:26.312512Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:19:26.312974Z", "stage": "generation_success", "level": "hard", "command": "nmap -A -p- 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:19:26.313448Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "invalid", "score": 0.1, "issues": ["force fail"], "command": "nmap -A -p- 192.168.1.0/24"}
+{"timestamp": "2025-12-13T19:19:26.313828Z", "stage": "validation_failure", "attempt": 1, "level": "hard", "issues": ["force fail"]}
+{"timestamp": "2025-12-13T19:19:26.314147Z", "stage": "pipeline_failure", "user_query": "Scan complexe avec tout", "reason": "Aucun agent n'a produit une commande valide après escalade et corrections"}
+{"timestamp": "2025-12-13T19:46:04.146999Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:46:04.147773Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:46:04.156204Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:46:04.156950Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:46:04.157790Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.9, "issues": [], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:46:04.158293Z", "stage": "pipeline_success", "final_command": "nmap -sS 192.168.1.10", "final_confidence": 0.9, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-13T19:46:04.166280Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:46:04.166923Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:46:04.167631Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:46:04.168262Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:46:04.168885Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["force fail"], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:46:04.169667Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["force fail"]}
+{"timestamp": "2025-12-13T19:46:04.170358Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:46:04.171895Z", "stage": "generation_success", "level": "medium", "command": "nmap -sS -sV 192.168.1.10", "source_agent": "LLM", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:46:04.172592Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["force fail"], "command": "nmap -sS -sV 192.168.1.10"}
+{"timestamp": "2025-12-13T19:46:04.173097Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["force fail"]}
+{"timestamp": "2025-12-13T19:46:04.173607Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:46:04.174271Z", "stage": "generation_success", "level": "hard", "command": "nmap -A -p- 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:46:04.175026Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "invalid", "score": 0.1, "issues": ["force fail"], "command": "nmap -A -p- 192.168.1.0/24"}
+{"timestamp": "2025-12-13T19:46:04.175811Z", "stage": "validation_failure", "attempt": 1, "level": "hard", "issues": ["force fail"]}
+{"timestamp": "2025-12-13T19:46:04.176333Z", "stage": "pipeline_failure", "user_query": "Scan complexe avec tout", "reason": "Aucun agent n'a produit une commande valide après escalade et corrections"}
+{"timestamp": "2025-12-13T19:47:23.198418Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:47:23.199107Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:47:23.207577Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:47:23.208332Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:47:23.209013Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.9, "issues": [], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:47:23.209560Z", "stage": "pipeline_success", "final_command": "nmap -sS 192.168.1.10", "final_confidence": 0.9, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-13T19:47:23.216049Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:47:23.216672Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:47:23.217166Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:47:23.217693Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:47:23.218250Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["force fail"], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:47:23.218734Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["force fail"]}
+{"timestamp": "2025-12-13T19:47:23.219270Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:47:23.219896Z", "stage": "generation_success", "level": "medium", "command": "nmap -sS -sV 192.168.1.10", "source_agent": "LLM", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:47:23.220521Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["force fail"], "command": "nmap -sS -sV 192.168.1.10"}
+{"timestamp": "2025-12-13T19:47:23.221214Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["force fail"]}
+{"timestamp": "2025-12-13T19:47:23.221897Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:47:23.222537Z", "stage": "generation_success", "level": "hard", "command": "nmap -A -p- 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:47:23.223110Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "invalid", "score": 0.1, "issues": ["force fail"], "command": "nmap -A -p- 192.168.1.0/24"}
+{"timestamp": "2025-12-13T19:47:23.223578Z", "stage": "validation_failure", "attempt": 1, "level": "hard", "issues": ["force fail"]}
+{"timestamp": "2025-12-13T19:47:23.223944Z", "stage": "pipeline_failure", "user_query": "Scan complexe avec tout", "reason": "Aucun agent n'a produit une commande valide après escalade et corrections"}
+{"timestamp": "2025-12-13T19:47:39.044689Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:47:39.045390Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:47:39.053626Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:47:39.054781Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:47:39.055852Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.9, "issues": [], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:47:39.056618Z", "stage": "pipeline_success", "final_command": "nmap -sS 192.168.1.10", "final_confidence": 0.9, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-13T19:47:39.062980Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:47:39.063920Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:47:39.064716Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:47:39.065496Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:47:39.066249Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["force fail"], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:47:39.066758Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["force fail"]}
+{"timestamp": "2025-12-13T19:47:39.067235Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:47:39.068159Z", "stage": "generation_success", "level": "medium", "command": "nmap -sS -sV 192.168.1.10", "source_agent": "LLM", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:47:39.068963Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["force fail"], "command": "nmap -sS -sV 192.168.1.10"}
+{"timestamp": "2025-12-13T19:47:39.069605Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["force fail"]}
+{"timestamp": "2025-12-13T19:47:39.070335Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:47:39.071184Z", "stage": "generation_success", "level": "hard", "command": "nmap -A -p- 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:47:39.071867Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "invalid", "score": 0.1, "issues": ["force fail"], "command": "nmap -A -p- 192.168.1.0/24"}
+{"timestamp": "2025-12-13T19:47:39.072338Z", "stage": "validation_failure", "attempt": 1, "level": "hard", "issues": ["force fail"]}
+{"timestamp": "2025-12-13T19:47:39.072711Z", "stage": "pipeline_failure", "user_query": "Scan complexe avec tout", "reason": "Aucun agent n'a produit une commande valide après escalade et corrections"}
+{"timestamp": "2025-12-13T19:49:11.770184Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:49:11.770832Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:49:11.780057Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:49:11.781126Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:49:11.781830Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.9, "issues": [], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:49:11.782437Z", "stage": "pipeline_success", "final_command": "nmap -sS 192.168.1.10", "final_confidence": 0.9, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-13T19:49:11.789051Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:49:11.789834Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:49:11.790468Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:49:11.791097Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:49:11.791749Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.9, "issues": [], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:49:11.792237Z", "stage": "pipeline_success", "final_command": "nmap -sS 192.168.1.10", "final_confidence": 0.9, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-13T19:50:17.091343Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:50:17.092097Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:50:17.101655Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:50:17.102839Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:50:17.103763Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.9, "issues": [], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:50:17.104512Z", "stage": "pipeline_success", "final_command": "nmap -sS 192.168.1.10", "final_confidence": 0.9, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-13T19:50:17.111954Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:50:17.112608Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:50:17.113284Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:50:17.113981Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:50:17.114620Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.9, "issues": [], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:50:17.115135Z", "stage": "pipeline_success", "final_command": "nmap -sS 192.168.1.10", "final_confidence": 0.9, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-13T19:51:30.701110Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:51:30.702160Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan nmap simple"}
+{"timestamp": "2025-12-13T19:51:30.711543Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:51:30.712196Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:51:30.712882Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["Mock refuse RAG/LLM pour test escalade"], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:51:30.713477Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["Mock refuse RAG/LLM pour test escalade"]}
+{"timestamp": "2025-12-13T19:51:30.714016Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:51:30.714653Z", "stage": "generation_success", "level": "medium", "command": "nmap -sS -sV 192.168.1.10", "source_agent": "LLM", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:51:30.715258Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["Mock refuse RAG/LLM pour test escalade"], "command": "nmap -sS -sV 192.168.1.10"}
+{"timestamp": "2025-12-13T19:51:30.715780Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["Mock refuse RAG/LLM pour test escalade"]}
+{"timestamp": "2025-12-13T19:51:30.716301Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:51:30.717135Z", "stage": "generation_success", "level": "hard", "command": "nmap -A -p- 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:51:30.717966Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.9, "issues": [], "command": "nmap -A -p- 192.168.1.0/24"}
+{"timestamp": "2025-12-13T19:51:30.718569Z", "stage": "pipeline_success", "final_command": "nmap -A -p- 192.168.1.0/24", "final_confidence": 0.9, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-13T19:51:30.725864Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:51:30.726911Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan complexe avec tout"}
+{"timestamp": "2025-12-13T19:51:30.727961Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-13T19:51:30.728694Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS 192.168.1.10", "source_agent": "RAG", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:51:30.729405Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["Mock refuse RAG/LLM pour test escalade"], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-13T19:51:30.730023Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["Mock refuse RAG/LLM pour test escalade"]}
+{"timestamp": "2025-12-13T19:51:30.730604Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:51:30.731250Z", "stage": "generation_success", "level": "medium", "command": "nmap -sS -sV 192.168.1.10", "source_agent": "LLM", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:51:30.731840Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["Mock refuse RAG/LLM pour test escalade"], "command": "nmap -sS -sV 192.168.1.10"}
+{"timestamp": "2025-12-13T19:51:30.732361Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["Mock refuse RAG/LLM pour test escalade"]}
+{"timestamp": "2025-12-13T19:51:30.733106Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-13T19:51:30.733693Z", "stage": "generation_success", "level": "hard", "command": "nmap -A -p- 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "mock"}
+{"timestamp": "2025-12-13T19:51:30.734293Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.9, "issues": [], "command": "nmap -A -p- 192.168.1.0/24"}
+{"timestamp": "2025-12-13T19:51:30.734826Z", "stage": "pipeline_success", "final_command": "nmap -A -p- 192.168.1.0/24", "final_confidence": 0.9, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-17T16:30:43.866409Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "scan all tcp ports on 192.168.1.10"}
+{"timestamp": "2025-12-17T16:30:43.867733Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "scan all tcp ports on 192.168.1.10"}
+{"timestamp": "2025-12-17T16:30:43.868714Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-17T16:30:43.870547Z", "stage": "generation_success", "level": "easy", "command": "nmap --open -sS 192.168.1.10", "source_agent": "RAG", "rationale": "Rules-based generation"}
+{"timestamp": "2025-12-17T16:30:43.872221Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.85, "issues": [], "command": "nmap --open -sS 192.168.1.10"}
+{"timestamp": "2025-12-17T16:30:43.873165Z", "stage": "pipeline_success", "final_command": "nmap --open -sS 192.168.1.10", "final_confidence": 0.85, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-18T13:27:58.574993Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan simple des ports ouverts"}
+{"timestamp": "2025-12-18T13:27:58.577038Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan simple des ports ouverts"}
+{"timestamp": "2025-12-18T13:27:58.578197Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T13:27:58.580272Z", "stage": "generation_success", "level": "easy", "command": "nmap --open -sS 192.168.1.10", "source_agent": "RAG", "rationale": "Rules-based generation"}
+{"timestamp": "2025-12-18T13:27:58.581990Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.85, "issues": [], "command": "nmap --open -sS 192.168.1.10"}
+{"timestamp": "2025-12-18T13:27:58.582880Z", "stage": "pipeline_success", "final_command": "nmap --open -sS 192.168.1.10", "final_confidence": 0.85, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-18T13:30:03.321767Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Quickly check open ports on scanme.nmap.org"}
+{"timestamp": "2025-12-18T13:30:03.323266Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Quickly check open ports on scanme.nmap.org"}
+{"timestamp": "2025-12-18T13:30:03.324272Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T13:30:03.326344Z", "stage": "generation_success", "level": "easy", "command": "nmap --open -sS 192.168.1.10", "source_agent": "RAG", "rationale": "Rules-based generation"}
+{"timestamp": "2025-12-18T13:30:03.327891Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.85, "issues": [], "command": "nmap --open -sS 192.168.1.10"}
+{"timestamp": "2025-12-18T13:30:03.328989Z", "stage": "pipeline_success", "final_command": "nmap --open -sS 192.168.1.10", "final_confidence": 0.85, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-18T13:35:55.385367Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan simple des ports ouverts"}
+{"timestamp": "2025-12-18T13:35:55.386570Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan simple des ports ouverts"}
+{"timestamp": "2025-12-18T13:35:55.387659Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T13:35:55.389560Z", "stage": "generation_success", "level": "easy", "command": "nmap --open -sS 192.168.1.10", "source_agent": "RAG", "rationale": "Rules-based generation"}
+{"timestamp": "2025-12-18T13:35:55.391091Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "valid", "score": 0.85, "issues": [], "command": "nmap --open -sS 192.168.1.10"}
+{"timestamp": "2025-12-18T13:35:55.392050Z", "stage": "pipeline_success", "final_command": "nmap --open -sS 192.168.1.10", "final_confidence": 0.85, "final_level": "easy", "total_attempts": 1}
+{"timestamp": "2025-12-18T14:01:07.401352Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:01:07.402958Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:01:07.404127Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T14:01:10.529959Z", "stage": "generation_failure", "level": "easy", "error": "All connection attempts failed", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:01:10.532006Z", "stage": "generation_success", "level": "easy", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T14:01:10.533737Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T14:01:10.534392Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:01:10.535355Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:01:10.537029Z", "stage": "generation_success", "level": "medium", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T14:01:10.538581Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T14:01:10.539600Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:01:10.541165Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:01:10.542622Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion stub - aggressive full scan on many ports"}
+{"timestamp": "2025-12-18T14:01:10.544486Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24"}
+{"timestamp": "2025-12-18T14:01:10.545479Z", "stage": "pipeline_success", "final_command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-18T14:32:56.056840Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:32:56.058303Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:32:56.059293Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T14:32:59.074727Z", "stage": "generation_failure", "level": "easy", "error": "All connection attempts failed", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:32:59.076808Z", "stage": "generation_success", "level": "easy", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T14:32:59.078480Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T14:32:59.079538Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:32:59.080440Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:32:59.082156Z", "stage": "generation_success", "level": "medium", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T14:32:59.083719Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T14:32:59.084644Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:32:59.085650Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:32:59.087197Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion stub - aggressive full scan on many ports"}
+{"timestamp": "2025-12-18T14:32:59.089013Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24"}
+{"timestamp": "2025-12-18T14:32:59.090071Z", "stage": "pipeline_success", "final_command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-18T14:38:47.854823Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:38:47.856303Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:38:47.857386Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T14:38:50.912087Z", "stage": "generation_failure", "level": "easy", "error": "All connection attempts failed", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:38:50.913776Z", "stage": "generation_success", "level": "easy", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T14:38:50.915389Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T14:38:50.916345Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:38:50.917219Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:38:50.918776Z", "stage": "generation_success", "level": "medium", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T14:38:50.920345Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T14:38:50.921233Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:38:50.922216Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:38:50.923519Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion stub - aggressive full scan on many ports"}
+{"timestamp": "2025-12-18T14:38:50.927607Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24"}
+{"timestamp": "2025-12-18T14:38:50.928771Z", "stage": "pipeline_success", "final_command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-18T14:42:48.675086Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:42:48.676071Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:42:48.677049Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T14:42:51.734637Z", "stage": "generation_failure", "level": "easy", "error": "All connection attempts failed", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:42:51.736284Z", "stage": "generation_success", "level": "easy", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T14:42:51.737848Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T14:42:51.738853Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:42:51.739824Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:42:51.741361Z", "stage": "generation_success", "level": "medium", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T14:42:51.743067Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T14:42:51.743942Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:42:51.744908Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:42:51.746371Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion stub - aggressive full scan on many ports"}
+{"timestamp": "2025-12-18T14:42:51.747957Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24"}
+{"timestamp": "2025-12-18T14:42:51.748999Z", "stage": "pipeline_success", "final_command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-18T14:47:38.374795Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:47:38.375943Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:47:38.376915Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T14:47:39.245126Z", "stage": "generation_failure", "level": "easy", "error": "Client error '422 Unprocessable Entity' for url 'http://192.168.68.175:8001/api/v1/generate'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:47:39.247135Z", "stage": "generation_success", "level": "easy", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T14:47:39.248766Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T14:47:39.249798Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:47:39.250843Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:47:39.252412Z", "stage": "generation_success", "level": "medium", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T14:47:39.254021Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T14:47:39.255016Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:47:39.256013Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:47:39.257088Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion stub - aggressive full scan on many ports"}
+{"timestamp": "2025-12-18T14:47:39.258351Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24"}
+{"timestamp": "2025-12-18T14:47:39.258936Z", "stage": "pipeline_success", "final_command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-18T14:51:47.199271Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:51:47.200183Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:51:47.200763Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T14:51:47.716028Z", "stage": "generation_success", "level": "easy", "command": "nmap -sV -T3 scanme.nmap.org", "source_agent": "RAG", "rationale": "## 📊 Commande Nmap générée\n\n**Scan:** -sV\n**Cible:** scanme.nmap.org\n**Options:** -sV\n**Confiance:** 82.00%\n\n**Source:** Knowledge Graph Neo4j"}
+{"timestamp": "2025-12-18T14:51:47.716907Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV -T3 scanme.nmap.org"}
+{"timestamp": "2025-12-18T14:51:47.717374Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:51:47.717783Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:51:47.718702Z", "stage": "generation_success", "level": "medium", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T14:51:47.719717Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T14:51:47.720495Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:51:47.721014Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:51:47.721661Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion stub - aggressive full scan on many ports"}
+{"timestamp": "2025-12-18T14:51:47.722527Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24"}
+{"timestamp": "2025-12-18T14:51:47.722997Z", "stage": "pipeline_success", "final_command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-18T14:53:26.441791Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "scan UDP sur 192.168.1.1 avec scripts"}
+{"timestamp": "2025-12-18T14:53:26.443107Z", "stage": "complexity_classification", "level": "hard", "confidence": 0.7, "user_query": "scan UDP sur 192.168.1.1 avec scripts"}
+{"timestamp": "2025-12-18T14:53:26.444082Z", "stage": "generation_start", "level": "hard", "is_initial_level": true}
+{"timestamp": "2025-12-18T14:53:26.445407Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion stub - aggressive full scan on many ports"}
+{"timestamp": "2025-12-18T14:53:26.447089Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24"}
+{"timestamp": "2025-12-18T14:53:26.448123Z", "stage": "pipeline_success", "final_command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-18T14:54:40.395674Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "scan UDP sur 192.168.1.1 avec scripts"}
+{"timestamp": "2025-12-18T14:54:40.396826Z", "stage": "complexity_classification", "level": "hard", "confidence": 0.7, "user_query": "scan UDP sur 192.168.1.1 avec scripts"}
+{"timestamp": "2025-12-18T14:54:40.397773Z", "stage": "generation_start", "level": "hard", "is_initial_level": true}
+{"timestamp": "2025-12-18T14:54:40.398946Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion stub - aggressive full scan on many ports"}
+{"timestamp": "2025-12-18T14:54:40.400062Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24"}
+{"timestamp": "2025-12-18T14:54:40.400786Z", "stage": "pipeline_success", "final_command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-18T14:57:05.734420Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "scan UDP sur 192.168.1.1"}
+{"timestamp": "2025-12-18T14:57:05.735427Z", "stage": "complexity_classification", "level": "hard", "confidence": 0.7, "user_query": "scan UDP sur 192.168.1.1"}
+{"timestamp": "2025-12-18T14:57:05.736477Z", "stage": "generation_start", "level": "hard", "is_initial_level": true}
+{"timestamp": "2025-12-18T14:57:05.737743Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion stub - aggressive full scan on many ports"}
+{"timestamp": "2025-12-18T14:57:05.739385Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24"}
+{"timestamp": "2025-12-18T14:57:05.740272Z", "stage": "pipeline_success", "final_command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-18T14:58:40.853969Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:58:40.855395Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T14:58:40.856385Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T14:58:41.732668Z", "stage": "generation_success", "level": "easy", "command": "nmap -sV -T3 scanme.nmap.org", "source_agent": "RAG", "rationale": "## 📊 Commande Nmap générée\n\n**Scan:** -sV\n**Cible:** scanme.nmap.org\n**Options:** -sV\n**Confiance:** 82.00%\n\n**Source:** Knowledge Graph Neo4j"}
+{"timestamp": "2025-12-18T14:58:41.734354Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV -T3 scanme.nmap.org"}
+{"timestamp": "2025-12-18T14:58:41.735376Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:58:41.737950Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:58:41.739600Z", "stage": "generation_success", "level": "medium", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T14:58:41.741339Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T14:58:41.742352Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T14:58:41.743255Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-18T14:58:41.744695Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion stub - aggressive full scan on many ports"}
+{"timestamp": "2025-12-18T14:58:41.746156Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24"}
+{"timestamp": "2025-12-18T14:58:41.747105Z", "stage": "pipeline_success", "final_command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-18T15:01:05.232022Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T15:01:05.233210Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T15:01:05.234156Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T15:01:06.000625Z", "stage": "generation_success", "level": "easy", "command": "nmap -sV -T3 scanme.nmap.org", "source_agent": "RAG", "rationale": "## 📊 Commande Nmap générée\n\n**Scan:** -sV\n**Cible:** scanme.nmap.org\n**Options:** -sV\n**Confiance:** 82.00%\n\n**Source:** Knowledge Graph Neo4j"}
+{"timestamp": "2025-12-18T15:01:06.002230Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV -T3 scanme.nmap.org"}
+{"timestamp": "2025-12-18T15:01:06.002899Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T15:01:06.003745Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-18T15:01:06.005188Z", "stage": "generation_success", "level": "medium", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T15:01:06.006794Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T15:01:06.007811Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T15:01:06.008875Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-18T15:01:06.010201Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion stub - aggressive full scan on many ports"}
+{"timestamp": "2025-12-18T15:01:06.011584Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24"}
+{"timestamp": "2025-12-18T15:01:06.012451Z", "stage": "pipeline_success", "final_command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-18T15:01:07.553693Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T15:01:07.554809Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan simple avec détection de services"}
+{"timestamp": "2025-12-18T15:01:07.555797Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T15:01:08.495209Z", "stage": "generation_success", "level": "easy", "command": "nmap -sV -T3 scanme.nmap.org", "source_agent": "RAG", "rationale": "## 📊 Commande Nmap générée\n\n**Scan:** -sV\n**Cible:** scanme.nmap.org\n**Options:** -sV\n**Confiance:** 82.00%\n\n**Source:** Knowledge Graph Neo4j"}
+{"timestamp": "2025-12-18T15:01:08.496894Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV -T3 scanme.nmap.org"}
+{"timestamp": "2025-12-18T15:01:08.497792Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T15:01:08.498646Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-18T15:01:08.499898Z", "stage": "generation_success", "level": "medium", "command": "nmap -sV 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T15:01:08.501061Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sV 192.168.1.10"}
+{"timestamp": "2025-12-18T15:01:08.501932Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-18T15:01:08.502776Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-18T15:01:08.503532Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion stub - aggressive full scan on many ports"}
+{"timestamp": "2025-12-18T15:01:08.504668Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24"}
+{"timestamp": "2025-12-18T15:01:08.505407Z", "stage": "pipeline_success", "final_command": "nmap -sS -sV -O -A -p- --min-rate 2000 192.168.1.0/24", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-18T15:02:43.118021Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan stealth des ports ouverts"}
+{"timestamp": "2025-12-18T15:02:43.119262Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan stealth des ports ouverts"}
+{"timestamp": "2025-12-18T15:02:43.120227Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T15:02:44.011042Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS -T3 scanme.nmap.org", "source_agent": "RAG", "rationale": "## 📊 Commande Nmap générée\n\n**Scan:** -sS\n**Cible:** scanme.nmap.org\n**Confiance:** 80.00%\n\n**Source:** Knowledge Graph Neo4j"}
+{"timestamp": "2025-12-18T15:02:44.012951Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "repairable", "score": 0.4, "issues": ["Flag '--open' absent"], "command": "nmap -sS -T3 scanme.nmap.org"}
+{"timestamp": "2025-12-18T15:02:44.014180Z", "stage": "self_correction_failure", "level": "easy", "attempt": 1, "error": "SelfCorrectionClient.repair() missing 1 required positional argument: 'validation'"}
+{"timestamp": "2025-12-18T15:02:44.015212Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-18T15:02:44.016768Z", "stage": "generation_success", "level": "medium", "command": "nmap -sS 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T15:02:44.018538Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-18T15:02:44.024472Z", "stage": "pipeline_success", "final_command": "nmap -sS 192.168.1.10", "final_confidence": 0.85, "final_level": "medium", "total_attempts": 1}
+{"timestamp": "2025-12-18T15:11:50.463279Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan stealth with top ports"}
+{"timestamp": "2025-12-18T15:11:50.464826Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "Scan stealth with top ports"}
+{"timestamp": "2025-12-18T15:11:50.465616Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-18T15:11:51.332349Z", "stage": "generation_success", "level": "easy", "command": "nmap -sS -T3 --top-ports 100 scanme.nmap.org", "source_agent": "RAG", "rationale": "## 📊 Commande Nmap générée\n\n**Scan:** -sS\n**Cible:** scanme.nmap.org\n**Ports:** --top-ports 100\n**Confiance:** 85.00%\n\n**Source:** Knowledge Graph Neo4j"}
+{"timestamp": "2025-12-18T15:11:51.334239Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "repairable", "score": 0.4, "issues": ["Flag '--open' absent"], "command": "nmap -sS -T3 --top-ports 100 scanme.nmap.org"}
+{"timestamp": "2025-12-18T15:11:51.335115Z", "stage": "self_correction_failure", "level": "easy", "attempt": 1, "error": "SelfCorrectionClient.repair() missing 1 required positional argument: 'validation'"}
+{"timestamp": "2025-12-18T15:11:51.335809Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-18T15:11:51.337341Z", "stage": "generation_success", "level": "medium", "command": "nmap -sS 192.168.1.10", "source_agent": "LLM", "rationale": "LLM hybrid rules generation"}
+{"timestamp": "2025-12-18T15:11:51.338852Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS 192.168.1.10"}
+{"timestamp": "2025-12-18T15:11:51.339795Z", "stage": "pipeline_success", "final_command": "nmap -sS 192.168.1.10", "final_confidence": 0.85, "final_level": "medium", "total_attempts": 1}
+{"timestamp": "2025-12-24T15:52:35.327272Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "scan all tcp ports on 192.168.1.10"}
+{"timestamp": "2025-12-24T15:52:35.328516Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "scan all tcp ports on 192.168.1.10"}
+{"timestamp": "2025-12-24T15:52:35.329479Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-24T15:52:57.141014Z", "stage": "generation_failure", "level": "easy", "error": "All connection attempts failed", "user_query": "scan all tcp ports on 192.168.1.10"}
+{"timestamp": "2025-12-24T15:53:00.207713Z", "stage": "generation_success", "level": "easy", "command": "nmap -p 192.168.1.10", "source_agent": "MEDIUM", "rationale": "T5-LoRA generation: ports 192.168.1.10, target 192.168.1.10"}
+{"timestamp": "2025-12-24T15:53:00.209683Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -p 192.168.1.10"}
+{"timestamp": "2025-12-24T15:53:00.210740Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-24T15:53:00.211710Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-24T15:53:02.575719Z", "stage": "generation_success", "level": "medium", "command": "nmap -p 192.168.1.10", "source_agent": "MEDIUM", "rationale": "T5-LoRA generation: ports 192.168.1.10, target 192.168.1.10"}
+{"timestamp": "2025-12-24T15:53:02.577512Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -p 192.168.1.10"}
+{"timestamp": "2025-12-24T15:53:02.578388Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-24T15:53:02.579326Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-24T15:53:03.482080Z", "stage": "generation_success", "level": "hard", "command": "nmap -sT -T3 192.168.1.10", "source_agent": "DIFFUSION", "rationale": "Diffusion-based synthesis: TCP connect scan, normal timing, targeting 192.168.1.10"}
+{"timestamp": "2025-12-24T15:53:03.483930Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sT -T3 192.168.1.10"}
+{"timestamp": "2025-12-24T15:53:03.484860Z", "stage": "validation_failure", "attempt": 1, "level": "hard", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-24T15:53:03.485546Z", "stage": "pipeline_failure", "user_query": "scan all tcp ports on 192.168.1.10", "reason": "Aucun agent n'a produit une commande valide après escalade et corrections"}
+{"timestamp": "2025-12-24T15:55:18.953654Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan all ports on 192.168.1.1"}
+{"timestamp": "2025-12-24T15:55:18.954446Z", "stage": "complexity_classification", "level": "hard", "confidence": 0.7, "user_query": "Scan all ports on 192.168.1.1"}
+{"timestamp": "2025-12-24T15:55:18.955431Z", "stage": "generation_start", "level": "hard", "is_initial_level": true}
+{"timestamp": "2025-12-24T15:55:19.802625Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -p - -T3 192.168.1.1", "source_agent": "DIFFUSION", "rationale": "Diffusion-based synthesis: SYN stealth scan, all 65535 ports, normal timing, targeting 192.168.1.1"}
+{"timestamp": "2025-12-24T15:55:19.804579Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "valid", "score": 0.85, "issues": [], "command": "nmap -sS -p - -T3 192.168.1.1"}
+{"timestamp": "2025-12-24T15:55:19.805390Z", "stage": "pipeline_success", "final_command": "nmap -sS -p - -T3 192.168.1.1", "final_confidence": 0.85, "final_level": "hard", "total_attempts": 1}
+{"timestamp": "2025-12-24T15:57:34.772506Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Perform a stealth scan with 10 random decoys and fragment packets on 192.168.1.0/24"}
+{"timestamp": "2025-12-24T15:57:34.773127Z", "stage": "complexity_classification", "level": "hard", "confidence": 0.7, "user_query": "Perform a stealth scan with 10 random decoys and fragment packets on 192.168.1.0/24"}
+{"timestamp": "2025-12-24T15:57:34.773832Z", "stage": "generation_start", "level": "hard", "is_initial_level": true}
+{"timestamp": "2025-12-24T15:57:35.178946Z", "stage": "generation_success", "level": "hard", "command": "nmap -sA -T2 -D RND:10 -f 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion-based synthesis: ACK scan, polite timing, 10 random decoys for IDS evasion, packet fragmentation, targeting 192.168.1.0/24"}
+{"timestamp": "2025-12-24T15:57:35.180222Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sA -T2 -D RND:10 -f 192.168.1.0/24"}
+{"timestamp": "2025-12-24T15:57:35.180857Z", "stage": "validation_failure", "attempt": 1, "level": "hard", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-24T15:57:35.181381Z", "stage": "pipeline_failure", "user_query": "Perform a stealth scan with 10 random decoys and fragment packets on 192.168.1.0/24", "reason": "Aucun agent n'a produit une commande valide après escalade et corrections"}
+{"timestamp": "2025-12-24T16:13:41.179678Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Perform a stealth scan with 10 random decoys and fragment packets on 192.168.1.0/24"}
+{"timestamp": "2025-12-24T16:13:41.191272Z", "stage": "complexity_classification", "level": "hard", "confidence": 0.7, "user_query": "Perform a stealth scan with 10 random decoys and fragment packets on 192.168.1.0/24"}
+{"timestamp": "2025-12-24T16:13:41.192299Z", "stage": "generation_start", "level": "hard", "is_initial_level": true}
+{"timestamp": "2025-12-24T16:13:41.937119Z", "stage": "generation_success", "level": "hard", "command": "nmap -sA -T2 -D RND:10 -f 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion-based synthesis: ACK scan, polite timing, 10 random decoys for IDS evasion, packet fragmentation, targeting 192.168.1.0/24"}
+{"timestamp": "2025-12-24T16:13:41.938725Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "invalid", "score": 0.1, "issues": ["Syntaxe incorrecte", "Flags incompatibles"], "command": "nmap -sA -T2 -D RND:10 -f 192.168.1.0/24"}
+{"timestamp": "2025-12-24T16:13:41.939646Z", "stage": "validation_failure", "attempt": 1, "level": "hard", "issues": ["Syntaxe incorrecte", "Flags incompatibles"]}
+{"timestamp": "2025-12-24T16:13:41.940340Z", "stage": "pipeline_failure", "user_query": "Perform a stealth scan with 10 random decoys and fragment packets on 192.168.1.0/24", "reason": "Aucun agent n'a produit une commande valide après escalade et corrections"}
+{"timestamp": "2025-12-24T16:14:33.304883Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Perform a stealth scan with 10 random decoys and fragment packets on 192.168.1.0/24"}
+{"timestamp": "2025-12-24T16:14:33.305577Z", "stage": "complexity_classification", "level": "hard", "confidence": 0.7, "user_query": "Perform a stealth scan with 10 random decoys and fragment packets on 192.168.1.0/24"}
+{"timestamp": "2025-12-24T16:14:33.306148Z", "stage": "generation_start", "level": "hard", "is_initial_level": true}
+{"timestamp": "2025-12-24T16:14:36.048658Z", "stage": "generation_failure", "level": "hard", "error": "name 'HTTPException' is not defined", "user_query": "Perform a stealth scan with 10 random decoys and fragment packets on 192.168.1.0/24"}
+{"timestamp": "2025-12-24T16:28:54.127385Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Perform a stealth scan with 10 random decoys and fragment packets on 192.168.1.0/24"}
+{"timestamp": "2025-12-24T16:28:54.129473Z", "stage": "complexity_classification", "level": "hard", "confidence": 0.7, "user_query": "Perform a stealth scan with 10 random decoys and fragment packets on 192.168.1.0/24"}
+{"timestamp": "2025-12-24T16:28:54.130434Z", "stage": "generation_start", "level": "hard", "is_initial_level": true}
+{"timestamp": "2025-12-24T16:28:55.139073Z", "stage": "generation_success", "level": "hard", "command": "nmap -sA -T2 -D RND:10 -f 192.168.1.0/24", "source_agent": "DIFFUSION", "rationale": "Diffusion-based synthesis: ACK scan, polite timing, 10 random decoys for IDS evasion, packet fragmentation, targeting 192.168.1.0/24"}
+{"timestamp": "2025-12-24T16:28:55.914756Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "invalid", "score": 0.0, "issues": ["Validator indisponible"], "command": "nmap -sA -T2 -D RND:10 -f 192.168.1.0/24"}
+{"timestamp": "2025-12-24T16:28:55.915953Z", "stage": "validation_failure", "attempt": 1, "level": "hard", "issues": ["Validator indisponible"]}
+{"timestamp": "2025-12-24T16:28:55.920166Z", "stage": "pipeline_failure", "user_query": "Perform a stealth scan with 10 random decoys and fragment packets on 192.168.1.0/24", "reason": "Aucun agent n'a produit une commande valide après escalade et corrections"}
+{"timestamp": "2025-12-24T16:35:33.822270Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "Scan UDP et TCP SYN en même temps sur tous les ports"}
+{"timestamp": "2025-12-24T16:35:33.823471Z", "stage": "complexity_classification", "level": "hard", "confidence": 0.7, "user_query": "Scan UDP et TCP SYN en même temps sur tous les ports"}
+{"timestamp": "2025-12-24T16:35:33.824350Z", "stage": "generation_start", "level": "hard", "is_initial_level": true}
+{"timestamp": "2025-12-24T16:35:34.835298Z", "stage": "generation_success", "level": "hard", "command": "nmap -sS -T3 <target>", "source_agent": "DIFFUSION", "rationale": "Diffusion-based synthesis: SYN stealth scan, normal timing"}
+{"timestamp": "2025-12-24T16:35:35.624080Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "invalid", "score": 0.85, "issues": ["Possible command injection detected."], "command": "nmap -sS -T3 <target>"}
+{"timestamp": "2025-12-24T16:35:35.625191Z", "stage": "validation_failure", "attempt": 1, "level": "hard", "issues": ["Possible command injection detected."]}
+{"timestamp": "2025-12-24T16:35:35.625965Z", "stage": "pipeline_failure", "user_query": "Scan UDP et TCP SYN en même temps sur tous les ports", "reason": "Aucun agent n'a produit une commande valide après escalade et corrections"}
+{"timestamp": "2025-12-24T16:37:46.274318Z", "stage": "comprehension", "is_nmap_related": true, "reason": "Contient des mots-clés Nmap", "user_query": "scan all tcp ports on 192.168.1.10"}
+{"timestamp": "2025-12-24T16:37:46.275809Z", "stage": "complexity_classification", "level": "easy", "confidence": 0.8, "user_query": "scan all tcp ports on 192.168.1.10"}
+{"timestamp": "2025-12-24T16:37:46.276853Z", "stage": "generation_start", "level": "easy", "is_initial_level": true}
+{"timestamp": "2025-12-24T16:38:07.999876Z", "stage": "generation_failure", "level": "easy", "error": "All connection attempts failed", "user_query": "scan all tcp ports on 192.168.1.10"}
+{"timestamp": "2025-12-24T16:38:10.789834Z", "stage": "generation_success", "level": "easy", "command": "nmap -p 192.168.1.10", "source_agent": "MEDIUM", "rationale": "T5-LoRA generation: ports 192.168.1.10, target 192.168.1.10"}
+{"timestamp": "2025-12-24T16:38:11.565225Z", "stage": "validation_attempt", "attempt": 1, "level": "easy", "status": "invalid", "score": 0.85, "issues": ["No scan target specified."], "command": "nmap -p 192.168.1.10"}
+{"timestamp": "2025-12-24T16:38:11.566147Z", "stage": "validation_failure", "attempt": 1, "level": "easy", "issues": ["No scan target specified."]}
+{"timestamp": "2025-12-24T16:38:11.566980Z", "stage": "generation_start", "level": "medium", "is_initial_level": false}
+{"timestamp": "2025-12-24T16:38:14.066662Z", "stage": "generation_success", "level": "medium", "command": "nmap -p 192.168.1.10", "source_agent": "MEDIUM", "rationale": "T5-LoRA generation: ports 192.168.1.10, target 192.168.1.10"}
+{"timestamp": "2025-12-24T16:38:14.448323Z", "stage": "validation_attempt", "attempt": 1, "level": "medium", "status": "invalid", "score": 0.85, "issues": ["No scan target specified."], "command": "nmap -p 192.168.1.10"}
+{"timestamp": "2025-12-24T16:38:14.449035Z", "stage": "validation_failure", "attempt": 1, "level": "medium", "issues": ["No scan target specified."]}
+{"timestamp": "2025-12-24T16:38:14.449513Z", "stage": "generation_start", "level": "hard", "is_initial_level": false}
+{"timestamp": "2025-12-24T16:38:14.989095Z", "stage": "generation_success", "level": "hard", "command": "nmap -sT -T3 192.168.1.10", "source_agent": "DIFFUSION", "rationale": "Diffusion-based synthesis: TCP connect scan, normal timing, targeting 192.168.1.10"}
+{"timestamp": "2025-12-24T16:38:15.476800Z", "stage": "validation_attempt", "attempt": 1, "level": "hard", "status": "invalid", "score": -29.0, "issues": ["Unsafe target 192.168.1.10: Target in restricted range: 192.168.0.0/16"], "command": "nmap -sT -T3 192.168.1.10"}
+{"timestamp": "2025-12-24T16:38:15.477474Z", "stage": "validation_failure", "attempt": 1, "level": "hard", "issues": ["Unsafe target 192.168.1.10: Target in restricted range: 192.168.0.0/16"]}
+{"timestamp": "2025-12-24T16:38:15.477970Z", "stage": "pipeline_failure", "user_query": "scan all tcp ports on 192.168.1.10", "reason": "Aucun agent n'a produit une commande valide après escalade et corrections"}
